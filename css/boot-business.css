@@ -12,13 +12,18 @@
  */
 
 /* Start : Override Bootstrap navigation */
+
+.dropdown-backdrop {
+  position: static;
+ }
+
 .navbar-inner, footer {
   border: none;
   padding: 15px 0;
   background: url('../img/header-footer.png');
 }
 .navbar .brand-bootbus {
-	font-size: 30px;
+	font-size: 25px;
 	cursor: pointer;
 	text-shadow: none;
 	color: white;
@@ -40,12 +45,12 @@
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
 	color: white !important;
-	background: #2E3436 !important;
+	background: #7CF04D !important; /* color change */
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
-	background: #2E3436;
+	background: #9AF576; /* color change */
 }
 /* End : Override Bootstrap navigation */
 
@@ -231,6 +236,13 @@
 .form-signin-signup input {
   margin-bottom: 15px;
 }
+
+.form-signin-signup textarea {
+  width: 70%;
+  height: 100px;
+  margin-bottom: 15px;  
+}
+
 .remember-me {
   margin: 0 auto;
   width: 70%;
@@ -254,7 +266,7 @@
 .form-contact-us textarea {
   height: 100px;
 }
-footer {
+footer {  
   color: white;
   padding-top: 20px;
 }
@@ -295,14 +307,14 @@ footer {
     color: white;
   }
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #2E3436;
+    background-color: #9AF576;
   }
   .nav-collapse .nav-header,
   .nav-collapse .dropdown-submenu > a {
     display: none;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 1200px) {
   body {
     padding-top: 70px;
   }
